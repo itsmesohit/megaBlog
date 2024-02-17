@@ -14,17 +14,6 @@ function PostCard({ $id, title, featuredImage, content }) {
   postPreview = postPreview.substring(0, 100);
   return (
     <Link>
-      {/* <div className='w-full bg-gray-100 rounded-xl p-4 h-68'>
-            <div className='w-full mb-4'>
-                <img src={appwriteService.getFilePreview(featuredImage)} alt={title}
-                className='rounded-xl h-48' />
-
-            </div>
-            <h2
-            className='text-xl font-bold'
-            >{title}</h2>
-        </div> */}
-
       <div className="w-[320px] rounded-md border bg-gray-100 p-4">
         <img
           src={appwriteService.getFilePreview(featuredImage)}
@@ -39,9 +28,9 @@ function PostCard({ $id, title, featuredImage, content }) {
           <Link to={`/post/${$id}`}>
             <button
               type="button"
-              className="mt-4 rounded-sm bg-black px-2.5 py-1 text-[10px] font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
-            >
-              Read
+              className="mt-4 rounded-sm bg-black px-5 py-1.5 text-[15px] font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+            > 
+              Read More
             </button>
           </Link>
         </div>
